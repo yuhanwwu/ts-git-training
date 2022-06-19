@@ -2,6 +2,8 @@
 
 This is a training exercise to practice indentifying and resolving conflicts in Git. It is a Node/Typescript project.
 
+Please note that lots of the code in this repo is deliberately overly verbose and inefficient. This is to generate some more intersting conflicts - I would not suggest using any of the code here if your objective is just to calculate Fibonacci numbers! I've also tried to use a mixture of syntax and approaches so that those unfamiliar with TS/JS get a bit more exposure to some simple tools that are available in the language.
+
 ## Setup
 
 1. Fork this repository so that you can push the results of your work to your own personal GitHub and practice raising PRs without affecting other people.
@@ -15,15 +17,16 @@ This is a training exercise to practice indentifying and resolving conflicts in 
 
 This repository has several branches. Your task is to combine them into one that will contain the features of all of them. Beware - conflicts lie ahead (that is, after all, the main point of the exercise)!
 
-Branches in the repo:
+This exercise will be most effective if you merge the branches in the order described below:
 
-- main
-- cleanup-computation
-- compute-array
-- handle-negatives
-- handle-null
-- negative-recursion
-- optional-recursion
+1. handle-negatives
+2. handle-null
+3. compute-array
+4. optional-recursion
+5. negative-recursion
+6. variable-names
+
+This is not the easiest order in which to merge the branches. However, this approach leads to the most interesting conflicts and is a good reflection of reality where feature branches aren't necessarily always merged in the most convenient order.
 
 ## Tests and Correctness
 
@@ -36,6 +39,8 @@ Tests are always supposed to be right and you should not need to edit them at an
 The goal state of this exercise is a `main` branch that contains all of the features that are currently split onto separate feature branches. **You should not have to write or modify any code outside of the merge conflict resolution process.**
 
 To get familiar with git and remote git repositories, there are several different approaches you can take to resolving these conflicts. I'd recommend working through them in order - the first one is the most refective of the process that we'll use on the project, but the others are great practice.
+
+Before starting to resolve the conflicts on each branch, it's a good idea to take a look through the changes and make sure you understand how the new code and test(s) on the branch work.
 
 1. The PR/rebase approach. For each branch:
     - Create a pull request ("PR") for a feature branch (make sure to make this against your own version of the repository, not my copy that you forked it from)
